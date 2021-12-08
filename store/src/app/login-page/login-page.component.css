@@ -53,4 +53,19 @@
     border-style: solid;
     border-color: #141D48;
     margin-right: 20px;
+    margin-left: 70px;
+    font-family: monospace;
+    font-size: 14px;
+}
+.submitBtn:hover{
+    background-color: white;
+    color:#141D48;
+    border-color: #141D48;
+    cursor: pointer;
+}
+.registerBtn{
+    font-family: monospace;
+    font-size: 14px;
+    text-decoration: none;
+    color: #141D48  ;
 }
