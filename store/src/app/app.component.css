@@ -1,0 +1,26 @@
+.navbar{
+    background-color: #141D48;
+    height: 40px;
+    margin: -10px;
+    overflow: hidden;
+
+}
+.navbar a{
+    color: white;
+    float: left; 
+    font-family: monospace;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+.navbar a:hover{
+   cursor: pointer; 
+}
+.head{
+    background-color:#141D48 ;
+    margin: -10px;
+}
