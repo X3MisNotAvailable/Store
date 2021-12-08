@@ -1,39 +1,56 @@
 .form-container{
-    margin-top: 120px;
+    margin-top: 130px;
     margin-left: 35% ;
     margin-right: 50%;
 
-    height: 400px;
+    height: 250px;
     width: 400px;
     padding: 30px;
-    background-color: #141d4850;
+    background-color: #141d4838;
+    box-shadow: gray;
+    padding-top: 50px;
+    
 }
 .form-group{
-    margin:20px;
-    padding-right: 15%;
-    padding-left: 5%;
+    margin:30px ;
+    margin-left: 50px;
+    
 }
 .icon{
-    height: 10px;
-   
+
+    height: 30px;
+    width: 30px;
+    color: white ;
+    text-align: center;
+    background-color: #141D48;
+    position: inherit;
+    padding-top: 10px;
 
 }
 .logo-cont{
     margin-left: 25%;
     margin-right: 25%;
-    margin-top: -80px;
+    margin-top: -100px;
     
 }
 .logo-cont img{
     border-radius: 5%;
 }
 .form-control{
-    border-radius: 5px;
     border-style: solid;
     border-color: #141D48;
-    height: 30px;
+    height: 34px;
     width: 250px;
-    padding-left: 35px;
-    margin-left: -30px;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgb(255, 255, 255);
+    margin-top: -10px;
+}
+
+.submitBtn{
+    height: 44px;
+    width: 70px;
+    color: white  ;
+    background-color: #141D48 ;
+    border-style: solid;
+    border-color: #141D48;
+    margin-right: 20px;
 }
