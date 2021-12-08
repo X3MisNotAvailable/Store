@@ -69,3 +69,7 @@
     text-decoration: none;
     color: #141D48  ;
 }
+.registerBtn:hover{
+    color: #75AABF;
+}
+
