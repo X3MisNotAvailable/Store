@@ -1,0 +1,39 @@
+.form-container{
+    margin-top: 120px;
+    margin-left: 35% ;
+    margin-right: 50%;
+
+    height: 400px;
+    width: 400px;
+    padding: 30px;
+    background-color: #141d4850;
+}
+.form-group{
+    margin:20px;
+    padding-right: 15%;
+    padding-left: 5%;
+}
+.icon{
+    height: 10px;
+   
+
+}
+.logo-cont{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: -80px;
+    
+}
+.logo-cont img{
+    border-radius: 5%;
+}
+.form-control{
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #141D48;
+    height: 30px;
+    width: 250px;
+    padding-left: 35px;
+    margin-left: -30px;
+    background-color: rgba(255, 255, 255, 0);
+}

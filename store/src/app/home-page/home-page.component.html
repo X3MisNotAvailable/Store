@@ -1,6 +1,105 @@
-<div class = "container">
-    <div class="head">
-        <img src="/assets/Logo.jpg" >
-    </div>
+<div class="toolbar">
+    <article class="art-toolbar" role="main">
+      <div class="img">
+        <img src="/assets/Logo.jpg" alt="Logo">
+      </div>
+      <div class = "input-container" >
+        <input class = "search-box" type = "search" name="search" placeholder="Search" id="search">
+        <a class ="search-btn" href="#">
+          <i class="fa fa-search icon">   </i>
+        </a>    
+        <a class="shopping-cartBtn">
+          <i class="fa fa-shopping-cart fa-7x cart-icon">
+          </i>
+        </a>     
+      </div>
+    </article>   
   </div>
-<p>home-page works!</p>
+  <div class="category-title">
+      <h1 class = "head">Category</h1>
+  </div>
+  <div class= "category-container">
+    
+    <article class="art-cat-container">
+      
+      <div class= "category-container-row1">
+        <a>
+        <img class="beverage" src="/assets/beverage.png">
+        <h1 class = "category-name">Beverages</h1>
+        </a>
+      </div>
+     
+      <div class= "category-container-row1">
+        <a>
+          <img class="bread" src="/assets/bread.png">
+          <h1 class = "category-name">Breads</h1>
+          </a>
+      </div>
+       
+      <div class= "category-container-row1">
+        <a>
+          <img class="can" src="/assets/can.png">
+          <h1 class = "category-name">Canned/Jarred Goods</h1>
+          </a>
+      </div>
+      <div class= "category-container-row1">
+        <a>
+          <img class="dairy" src="/assets/dairy.png">
+          <h1 class = "category-name">Dairy Products</h1>
+          </a>
+      </div>
+      <div class= "category-container-row1">
+        <a>
+          <img class="dairy" src="/assets/frozen.png">
+          <h1 class = "category-name">Frozen Foods</h1>
+          </a>
+      </div>
+      <div class= "category-container-row1">
+        <a>
+          <img class="meat" src="/assets/meat.png">
+          <h1 class = "category-name">Meats</h1>
+          </a>
+      </div>
+      <div class= "category-container-row1">
+        <a>
+          <img class="meat" src="/assets/cleaner.png">
+          <h1 class = "category-name">Cleaning Products</h1>
+          </a>
+      </div>
+      <div class= "category-container-row1">
+        <a>
+        <img class="meat" src="/assets/care.png">
+          <h1 class = "category-name">Personal Care Products</h1>
+          </a>
+      </div>
+      <div class= "category-container-row1">
+        <a>
+          <img class="meat" src="/assets/fruits.png">
+            <h1 class = "category-name">Fruits and Vegetables</h1>
+            </a>
+      </div>
+      <div class= "category-container-row1">
+        <a>
+          <img class="meat" src="/assets/baby.png">
+            <h1 class = "category-name">Baby Care</h1>
+            </a>
+      </div>
+      <div class= "category-container-row1">
+        <a>
+          <img class="meat" src="/assets/frozen.png">
+            <h1 class = "category-name">Frozen Goods</h1>
+            </a>
+      </div>
+      <div class= "category-container-row1">
+        <a>
+          <img class="meat" src="/assets/hardware.png">
+            <h1 class = "category-name">Hardware Products</h1>
+            </a>
+      </div>
+
+    </article>
+  </div>
+
+
+
+  <router-outlet></router-outlet>
