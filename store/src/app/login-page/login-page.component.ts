@@ -27,6 +27,7 @@ this.dataService.userlogin(angForm1.value.username,angForm1.value.pwd)
 .pipe(first())
 .subscribe(
 data => {
+  console.log("log in data", data);
   
 const redirect = this.dataService.redirectUrl ? this.dataService.redirectUrl : '/home-page';
 this.router.navigate([redirect]);

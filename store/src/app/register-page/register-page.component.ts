@@ -42,6 +42,7 @@ postdata(angForm1: { value:
     .pipe(first())
     .subscribe(
       data=> {
+        console.log("register data" , data);
 this.router.navigate(['/login-page']);
 console.log("NAGLAOG NA!");
 

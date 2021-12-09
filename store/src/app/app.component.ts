@@ -11,7 +11,7 @@ export class AppComponent {
   title = 'store';
 
 loginbtn:boolean;
-logoutbtn:boolean;
+logoutbtn:boolean = false;
 
 constructor(private dataService: ApiService) {
 dataService.getLoggedInName.subscribe(name => this.changeName(name));
