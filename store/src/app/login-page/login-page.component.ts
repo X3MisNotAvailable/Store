@@ -15,25 +15,28 @@ angForm: FormGroup;
 constructor(private fb: FormBuilder,private dataService: ApiService,private router:Router) {
 this.angForm = this.fb.group({
 username: ['', [Validators.required,Validators.minLength(1), Validators.required]],
-password: ['', Validators.required]
+pwd: ['', Validators.required]
 });
 }
 
 ngOnInit() {
 }
-postdata(angForm1: { value: { username: any; password: any; }; })
+postdata(angForm1: { value: { username: any; pwd: any; }; })
 {
-this.dataService.userlogin(angForm1.value.username,angForm1.value.password)
+this.dataService.userlogin(angForm1.value.username,angForm1.value.pwd)
 .pipe(first())
 .subscribe(
 data => {
-const redirect = this.dataService.redirectUrl ? this.dataService.redirectUrl : '/dashboard';
+  
+const redirect = this.dataService.redirectUrl ? this.dataService.redirectUrl : '/home-page';
 this.router.navigate([redirect]);
 },
 error => {
+  console.log(error);
+  
 alert("Username or password is incorrect")
 });
 }
-get email() { return this.angForm.get('email'); }
-get password() { return this.angForm.get('password'); }
+get username() { return this.angForm.get('username'); }
+get pwd() { return this.angForm.get('pwd'); }
 }

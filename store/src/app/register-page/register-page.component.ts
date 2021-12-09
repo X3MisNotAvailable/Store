@@ -13,34 +13,53 @@ import { ApiService } from '../api.service';
 export class RegisterPageComponent implements OnInit {
 angForm: FormGroup;
 constructor(private fb: FormBuilder,private dataService: ApiService,private router:Router) {
-this.angForm = this.fb.group({
-username: ['', [Validators.required,Validators.minLength(1)]],
-password: ['', Validators.required],
-name: ['', Validators.required],
-phonenumber: ['', Validators.required],
-address :['', Validators.required]
+  this.angForm = this.fb.group({
+  name: ['', Validators.required],
+  username: ['', [Validators.required,Validators.minLength(1)]],
+  pwd: ['', Validators.required],
+  phonenumber: ['', Validators.required],
+  address :['', Validators.required]
 });
 }
 
 ngOnInit() {
 }
 
-postdata(angForm1: { value: { name: any; username: any; password: any; phonenumber: any; address: any;  }; })
+postdata(angForm1: { value: 
+  { name: string; 
+    username: string; 
+    pwd: string; 
+    phonenumber: string; 
+    address: string; 
+  }; })
 {
-this.dataService.userregistration(angForm1.value.name,angForm1.value.username,angForm1.value.password,angForm1.value.phonenumber,angForm1.value.address)
-.pipe(first())
-.subscribe(
-data => {
+    this.dataService.userregistration
+    (angForm1.value.name,
+      angForm1.value.username,
+      angForm1.value.pwd,
+      angForm1.value.phonenumber
+      ,angForm1.value.address)
+    .pipe(first())
+    .subscribe(
+      data=> {
 this.router.navigate(['/login-page']);
+console.log("NAGLAOG NA!");
+
 },
 
 error => {
+  console.log(error);
+  console.log("DAI PA NAG LALAOG");
+  this.router.navigate(['/login-page'])
+  
 });
 }
 
 get username() { return this.angForm.get('username'); }
-get password() { return this.angForm.get('password'); }
+get pwd() { return this.angForm.get('pwd'); }
 get name() { return this.angForm.get('name'); }
 get phonenumber() { return this.angForm.get('phonenumber'); }
 get address() { return this.angForm.get('address'); }
 }
+
+
