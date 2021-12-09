@@ -3,18 +3,17 @@
 <link rel="stylesheet"  href="app.component.css">
 <header>
   <nav class="navbar">
-    <a routerLink="/login-page">
+    <a  *ngIf="loginbtn" routerLink="/login-page" routerLinkActive="active">
       Log in  
     </a>
-    <a routerLink="/register-page">
+    <a  routerLink="/register-page" routerLinkActive="active">
       Register 
     </a>
-    <a routerLink="/home-page">
+    <a  *ngIf="loginbtn" routerLink="/home-page" routerLinkActive="active">
       Home 
     </a>
     <a>Contacts
     </a>
   </nav>
 </header>
-
 <router-outlet></router-outlet>
