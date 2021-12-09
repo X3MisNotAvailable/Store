@@ -1,0 +1,25 @@
+{
+  "name": "online-grocery-store",
+  "version": "1.0.0",
+  "description": "for_project",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/X3MisNotAvailable/Store.git"
+  },
+  "keywords": [
+    "store"
+  ],
+  "author": "Bers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/X3MisNotAvailable/Store/issues"
+  },
+  "homepage": "https://github.com/X3MisNotAvailable/Store#readme",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
