@@ -4,7 +4,7 @@
   "description": "for_project",
   "main": "index.js",
   "scripts": {
-    "test": "start"
+    "dev": "lite-server"
   },
   "repository": {
     "type": "git",
