@@ -23,7 +23,7 @@ app.controller('homeCtrl', function($scope){
     }
     
 });
-login.controller('loginCtrl', function($scope){
+app.controller('loginCtrl', function($scope){
     $scope.login = function(){
         var username = $scope.username;
         var password = $scope.password;
