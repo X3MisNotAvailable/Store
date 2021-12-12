@@ -24,6 +24,7 @@
     color: white;
     font-family: monospace;
     font-size: 20px;
+    margin-right: -5px;
 }
 article {
     max-width: 940px;
@@ -42,7 +43,7 @@ article {
     margin-top: 50px;
     width: 550px;
     padding-right: -200px;
-    margin-left: -100px;
+    margin-left: -237px;
 }
 .search-box{
     width: 500px;
