@@ -60,8 +60,9 @@ article {
   
   .shopping-cartBtn{
       padding-top: 5px;
-      padding-left: 100px;
+      padding-left: 0px;
       position: absolute;
+      margin-left:90px ;
   }
   .cart-icon{
       color:white ;

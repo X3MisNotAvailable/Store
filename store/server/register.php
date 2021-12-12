@@ -17,6 +17,7 @@ $authdata = [
 'Address' => $address,    
 'phonenumber' => $phonenumber,  
 'cx_name' => $name,
+'username' => $username,
 'pwd' => $pwd,
 'Cx_id' => mysqli_insert_id($mysqli)
 ];

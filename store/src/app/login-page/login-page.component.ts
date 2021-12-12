@@ -23,17 +23,21 @@ ngOnInit() {
 }
 postdata(angForm1: { value: { username: any; pwd: any; }; })
 {
+  
 this.dataService.userlogin(angForm1.value.username,angForm1.value.pwd)
 .pipe(first())
 .subscribe(
 data => {
-  console.log("log in data", data);
+  //console.log("log in data", this.postdata);
+  if (data.username = " "){
+    console.log("log in data", data.username, );
+  }
   
 const redirect = this.dataService.redirectUrl ? this.dataService.redirectUrl : '/home-page';
 this.router.navigate([redirect]);
 },
 error => {
-  console.log(error);
+  //console.log(error);
   
 alert("Username or password is incorrect")
 });

@@ -7,7 +7,8 @@ providedIn: 'root'
 })
 
 export class AuthguardGuard implements CanActivate {
-    constructor(public auth: ApiService, public router: Router) {}
+  
+  constructor(public auth: ApiService, public router: Router) {}
   canActivate(): boolean {
     if (!this.auth.isLoggedIn()) {
       this.router.navigate(['/home-page']);
@@ -15,23 +16,30 @@ export class AuthguardGuard implements CanActivate {
     }
     return true;
   }
-}
-/*{
-constructor(private dataService: ApiService,private router: Router ) {}
-canActivate(
-route: ActivatedRouteSnapshot,
-state: RouterStateSnapshot) {
-const routeurl: string = state.url;
+  } 
 
-return this.isLogin(routeurl);
-}
 
-isLogin(routeurl: string) {
-if (this.dataService.isLoggedIn()) {
-return true;
-}
+/*
 
-this.dataService.redirectUrl = routeurl;
-this.router.navigate(['/login-page'], {queryParams: { returnUrl: routeurl }} );
-}
-} */
+
+
+   constructor(private dataService: ApiService,private router: Router ) {}
+    canActivate(
+      
+    route: ActivatedRouteSnapshot,
+    state: RouterStateSnapshot): boolean {
+
+    const routeurl: string |undefined = state.url!;
+    
+    return this.isLogin(routeurl);
+    }
+
+    isLogin(routeurl: string) {
+    if (this.dataService.isLoggedIn()) {
+    return true;
+    }
+    
+    this.dataService.redirectUrl = routeurl;
+    this.router.navigate(['/login-page'], {queryParams: { returnUrl: routeurl }} );
+    }
+*/

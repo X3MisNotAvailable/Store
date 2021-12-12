@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="register-page.component.css">
-<form class = "form-container" [formGroup]="angForm" (ngSubmit)="postdata(angForm)" autocomplete="off" >
+<form class = "form-container" [formGroup]="angForm" (ngSubmit)="postdata(angForm)" autocomplete="off" required >
     <div class="logo-cont">
         <img src="/assets/Logo.jpg" alt="">
     </div>
@@ -7,30 +7,30 @@
     <div class="form-group">
         <i class="fa fa-user icon ">
         </i>
-        <input type="text" formControlName="username" autocomplete="off" class="form-control" placeholder="username"  />
+        <input type="text" formControlName="username" autocomplete="off" class="form-control" placeholder="username"  required />
         
     </div>
     <div class="form-group">
         <i class="fa fa-user icon ">
         </i>
-        <input type="text" formControlName="name" autocomplete="off" class="form-control" placeholder="fullname"  />
+        <input type="text" formControlName="name" autocomplete="off" class="form-control" placeholder="fullname"  required />
         
     </div>
     
     <div class="form-group">
         <i class="fa icon">&#xf1ac;
         </i>
-        <input type="text" formControlName="address"  autocomplete="off" class="form-control" placeholder="address"  />
+        <input type="text" formControlName="address"  autocomplete="off" class="form-control" placeholder="address"  required  />
         
     </div>
     <div class="form-group">
         <i class="fa fa-phone icon ">
         </i>
-        <input type="text" formControlName="phonenumber" autocomplete="off" class="form-control" placeholder="phone number"  />
+        <input type="text" formControlName="phonenumber" autocomplete="off" class="form-control" placeholder="phone number"  required  />
     </div>
     <div class="form-group">
         <i class="fa fa-key  icon  "></i>
-        <input type="password" formControlName="pwd" class="form-control"  placeholder="password"  />
+        <input type="password" formControlName="pwd" class="form-control"  placeholder="password"  required />
         
     </div>
     <div class="form-group">

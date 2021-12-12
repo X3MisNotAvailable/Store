@@ -13,12 +13,13 @@ import { ApiService } from '../api.service';
 export class RegisterPageComponent implements OnInit {
 angForm: FormGroup;
 constructor(private fb: FormBuilder,private dataService: ApiService,private router:Router) {
+   
   this.angForm = this.fb.group({
-  name: ['', Validators.required],
-  username: ['', [Validators.required,Validators.minLength(1)]],
-  pwd: ['', Validators.required],
-  phonenumber: ['', Validators.required],
-  address :['', Validators.required]
+  name: [''],
+  username: ['', [Validators.minLength(1)]],
+  pwd: ['' ],
+  phonenumber: [''],
+  address :['']
 });
 }
 
@@ -42,8 +43,19 @@ postdata(angForm1: { value:
     .pipe(first())
     .subscribe(
       data=> {
-        console.log("register data" , data);
-this.router.navigate(['/login-page']);
+       
+         //console.log("log in data", this.postdata);
+ /* if ((data.cx_name = " " ) && (data.pwd = " " )){
+    console.log("log in data", data.username, data.Cx_id, data.pwd );
+    console.log("register data" , data);
+    console.error("error");
+   
+      alert("Input field are empty!")
+  }
+  else{
+    this.router.navigate(['/login-page']);
+  }*/
+  this.router.navigate(['/login-page']);
 console.log("NAGLAOG NA!");
 
 },

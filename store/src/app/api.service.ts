@@ -8,22 +8,25 @@ providedIn: 'root'
 })
 
 export class ApiService {
-redirectUrl: string | undefined;
-baseUrl:string = "http://localhost/Store/store/server";
-@Output() getLoggedInName: EventEmitter<any> = new EventEmitter();
-constructor(private httpClient : HttpClient) { }
-public userlogin(username:string, password:string) {
-alert(username)
-return this.httpClient.post<any>(this.baseUrl + '/login.php', { username, password })
-.pipe(map(Users => {
-this.setToken(Users[0].name);
-this.getLoggedInName.emit(true);
-return Users;
+    redirectUrl: string | undefined;
+    baseUrl:string = "http://localhost/Store/store/server";
+    @Output() getLoggedInName: EventEmitter<any> = new EventEmitter();
+    constructor(private httpClient : HttpClient) { }
+    public userlogin(username:string, password:string) { alert(username)
+    return this.httpClient.post<any>(this.baseUrl + '/login.php', { username, password })
+        .pipe(map(Users => {
+        this.setToken(Users[0].name);
+        this.getLoggedInName.emit(true);
+    return Users;
 }));
 }
 
-public userregistration(name: string,username: string,pwd: string,phonenumber : string, address: string ) {
-return this.httpClient.post<any>(this.baseUrl + '/register.php', { name,username,pwd,phonenumber,address })
+public userregistration(name: string,
+    username: string,
+    pwd: string,
+    phonenumber : string, 
+    address: string ) {
+    return this.httpClient.post<any>(this.baseUrl + '/register.php', { name,username,pwd,phonenumber,address })
 .pipe(map(Users => {
 return Users;
 }));
