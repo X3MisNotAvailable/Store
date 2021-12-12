@@ -60,3 +60,21 @@ article {
   p{
       margin-top: 200px;
   }
+  .cart-container{
+    position: inherit;
+   background-color: rgb(154, 156, 155);
+    margin-top: 150px ;
+    margin-left: 20%;
+    margin-right: 40%;
+    width: 1000px;
+    text-align: left;
+    height: 20px;
+    padding: 10px;
+}
+.prod{
+    color: white;
+    padding-left: 30px;
+    width:1000px ;
+    font-family: arial, sans-serif;
+    font-size: 15px
+}
