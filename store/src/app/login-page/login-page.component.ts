@@ -28,10 +28,7 @@ this.dataService.userlogin(angForm1.value.username,angForm1.value.pwd)
 .pipe(first())
 .subscribe(
 data => {
-  //console.log("log in data", this.postdata);
-  if (data.username = " "){
-    console.log("log in data", data.username, );
-  }
+ 
   
 const redirect = this.dataService.redirectUrl ? this.dataService.redirectUrl : '/home-page';
 this.router.navigate([redirect]);
@@ -42,6 +39,7 @@ error => {
 alert("Username or password is incorrect")
 });
 }
+
 get username() { return this.angForm.get('username'); }
 get pwd() { return this.angForm.get('pwd'); }
 }

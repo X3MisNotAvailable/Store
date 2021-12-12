@@ -3,6 +3,7 @@
     height: 40px;
     margin: -10px;
     overflow: hidden;
+    position: initial;
 
 }
 .navbar a{
