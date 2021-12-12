@@ -85,7 +85,9 @@ article {
     padding-right: -100px;
     width:1000px ;
     font-family: arial, sans-serif;
-    font-size: 15px
+    font-size: 15px;
+    text-decoration: none;
+    
 }
 th,tr{
     text-align: center;
