@@ -11,6 +11,7 @@ import { CartComponent } from './cart/cart.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HomePageComponent,
     RegisterPageComponent,
     CartComponent,
-    DashboardComponent
+    DashboardComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,

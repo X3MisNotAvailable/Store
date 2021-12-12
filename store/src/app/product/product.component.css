@@ -1,0 +1,62 @@
+
+.toolbar{
+    background-color: #141D48;
+    height: 120px;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    left: 0;
+    width: 100%; /* Full width */
+    margin-top: 35px;
+    
+}
+.img{
+    position: relative;
+    height: 100px;
+    padding-top: 5px;
+   
+}
+article {
+    max-width: 940px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  
+.icon {
+    color:white ;
+}
+
+.input-container{
+    margin-top: 50px;
+    width: 550px;
+    padding-right: -200px;
+}
+.search-box{
+    width: 500px;
+    height: 40px;
+    padding:20px;
+    border-style: none;
+    border-color: white;
+    border-style: solid;
+   
+}
+.search-btn{
+    align-content: center;
+    background-color: #141D48;
+    margin-left: 0px;
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+    height: 18px;
+    width: 40px;
+    border-color: white;
+    border-style: solid;
+}
+.icon:hover{
+    cursor:pointer;
+  }
+  p{
+      margin-top: 200px;
+  }
